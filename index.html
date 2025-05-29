@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Conf 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="bg-pattern-container" aria-hidden="true">
+            <img src="assets/images/pattern-squiggly-line-top.svg" class="bg-pattern top-left" alt="">
+            <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" class="bg-pattern bottom-right" alt="">
+            <img src="assets/images/pattern-lines.svg" class="bg-pattern mid-right" alt="">
+            <img src="assets/images/pattern-circle.svg" class="bg-pattern mid-left" alt="">
+            <div class="bg-overlay"></div>
+        </div>
+        
+        <form class="form">
+            <img src="assets/images/logo-full.svg" alt="Coding Conf Logo" class="logo">
+            
+            <div class="header">
+                <h1>Your Journey to Coding Conf<br>2025 Starts Here!</h1>
+                <p class="subtitle">Secure your spot at next year's biggest coding conference.</p>
+            </div>
+            
+            <div class="form-group">
+                <label>Upload Avatar</label>
+                <div class="dropzone" id="dropzone">
+                    <img src="assets/images/icon-upload.svg" alt="Upload" class="upload-icon">
+                    <p>Drag and drop or click to upload</p>
+                </div>
+                <small class="file-hint">Upload your photo (JPG or PNG, max size: 500KB).</small>
+                <span class="error" id="avatar-error">Please upload a photo under 500KB</span>
+            </div>
+
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" >
+                <span class="error">Please enter your full name</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" >
+                <span class="error">Please enter a valid email address</span>
+            </div>
+
+            <div class="form-group">
+                <label for="github">GitHub Username</label>
+                <input type="text" id="github" name="github" placeholder="@yourusername" >
+                <span class="error">Please enter your GitHub username</span>
+            </div>
+
+            <button type="submit" class="submit-btn">Generate My Ticket</button>
+        </form>
+
+        <div class="success-container" style="display: none;">
+            <img src="assets/images/logo-full.svg" alt="Coding Conf" class="logo">
+            <div class="success-header">
+                <h1><span>Congrats,</span> <span class="user-name">Bimme Audrey</span>!</h1>
+                <h2 class="subtitle">Your ticket is ready.</h2>
+            </div>
+            <p class="success-message">
+                We've emailed your ticket to
+                <span class="user-email">bimmeaudrey@gmail.com</span> and will send updates in
+                the run up to the event.
+            </p>
+            <div class="ticket">
+                <img src="assets/images/pattern-ticket.svg" alt="" class="ticket-pattern">
+                <div class="ticket-content">
+                    <div class="ticket-header">
+                        <img src="assets/images/logo-mark.svg" alt="Coding Conf" class="ticket-logo">
+                        <div class="ticket-brand-group">
+                            <span class="ticket-brand">Coding Conf</span>
+                            <span class="event-details">Jan 31, 2025 / Austin, TX</span>
+                        </div>
+                    </div>
+                    <div class="attendee-info">
+                        <img src="" alt="Avatar" class="ticket-avatar">
+                        <div class="attendee-details">
+                            <h2 class="attendee-name">Bimme Audrey</h2>
+                            <p class="github-handle">
+                                <img src="assets/images/icon-github.svg" alt="GitHub" class="github-icon">
+                                <span>@bimme2audrey</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ticket-number">#609104</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
